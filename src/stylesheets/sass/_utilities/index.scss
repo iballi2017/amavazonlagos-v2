@@ -1,0 +1,16 @@
+@use "../_partials/mixins";
+
+.slide-left {
+  @include mixins.maxmq(1024px) {
+    left: -100%;
+    transition: left 2s ease-in-out;
+  }
+}
+
+[aria-current="page"] {
+  color: rgb(68, 98, 127);
+  border-bottom: 1px solid rgb(68, 98, 127);
+  svg {
+    color: rgb(68, 98, 127);
+  }
+}
