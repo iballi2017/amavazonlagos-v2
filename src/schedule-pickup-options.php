@@ -14,12 +14,13 @@
     <div class="lg:ml-64 flex-1 p-4 lg:p-10 my-12">
         <div class="block p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
+        <h1 class="text-xl font-semibold mb-4">Schedule Pickups</h1>
             <ul class="grid grid-cols-2 gap-4">
                 <li>
 
-                    <a href="#" class="h-full block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <a href="schedule-pickup-form-tier-1.php" class="h-full block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Without Dollar Cards and U.S. Shipping Address</h5>
+                        <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Without Dollar Cards and U.S. Shipping Address (Tier 1)</h5>
                         <p class="font-normal text-gray-700 dark:text-gray-400">
                             For Nigerian consumers who possess dollar-denominated cards, such as those issued by Nigerian banks for international transactions, but lack a physical address in the United States.
                         </p>
@@ -28,9 +29,9 @@
                 </li>
                 <li>
 
-                    <a href="#" class="h-full block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <a href="schedule-pickup-form-tier-2.php" class="h-full block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
 
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Nigerans with Dollar Cards but Without a U.S. Shipping Address</h5>
+                        <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">Nigerans with Dollar Cards but Without a U.S. Shipping Address (Tier 2)</h5>
                         <p class="font-normal text-gray-700 dark:text-gray-400">For Nigerians who lack access to international dollar-denominated cards or a U.S. shipping address. </p>
                     </a>
 
@@ -75,10 +76,10 @@
             </ul>
         </div>
 
-        <div id="tab-contents" class="block p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div id="tab-contents" class="hidden  p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div id="tab-schedule" class="tab-content hidden">
                 <!-- user profile -->
-                <?php include "./schedule-pickup_form.php" ?>
+                <?php include "./schedule-pickup-form-tier-1.php" ?>
             </div>
             <div id="tab-pickup-history" class="tab-content hidden">
                 <!-- user security -->

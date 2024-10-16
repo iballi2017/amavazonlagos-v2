@@ -50,7 +50,7 @@
         <div id="tab-contents" class="block p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div id="tab-schedule" class="tab-content hidden">
                 <!-- user profile -->
-                <?php include "./schedule-pickup_form.php" ?>
+                <?php include "./schedule-pickup-form-tier-1.php" ?>
             </div>
             <div id="tab-pickup-history" class="tab-content hidden">
                 <!-- user security -->

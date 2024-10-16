@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         active_user_account_nav_tab();
         active_sidenav_tab();
         password_field_type_toggle();
+        scroll_effect_for_pickup_schedule_summary();
 
     }
 
@@ -80,6 +81,58 @@ document.addEventListener('DOMContentLoaded', () => {
             })
 
         }
+    }
+
+    function scroll_effect_for_pickup_schedule_summary() {
+
+        const movingElement = document.querySelector('.movingElement');
+        const scroll_holder = document.querySelector('.scroll-holder');
+        movingElement.style.transform = `translateY(0)`;
+
+
+        // movingElement && window.addEventListener('scroll', () => {
+        //     // Get the scroll position of the page
+        //     let scrollY = window.scrollY;
+
+        //     // Update the position of the element based on the scroll
+        //     if (scrollY < 490) {
+        //         movingElement.style.transform = `translateY(${scrollY * 1.5}px)`;
+        //     }
+
+        // });
+
+
+        function control_card_scroll() {
+            movingElement && window.addEventListener('scroll', () => {
+                // Get the scroll position of the page
+                let scrollY = window.scrollY;
+
+                // Update the position of the element based on the scroll
+                if (scrollY < 490) {
+                    movingElement.style.transform = `translateY(${scrollY * 1.5}px)`;
+                }
+
+            });
+        }
+
+
+        // Define a media query
+        const mediaQuery = window.matchMedia('(max-width: 1024px)');
+
+        // Check if the media query matches
+        function handleScreenChange(e) {
+            if (!e.matches) {
+                // If the screen width is 1024px or less
+                // If the screen width is greater than 1024px
+                // console.log("Screen is more than 1024px");
+                control_card_scroll();
+            }
+        }
+
+        // Attach the function to the media query's change event
+        mediaQuery.addEventListener('change', handleScreenChange);
+        // Initial check
+        handleScreenChange(mediaQuery);
     }
 
     Init();
