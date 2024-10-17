@@ -1,1 +1,1 @@
-﻿# amazonlagos-v2
+# amazonlagos-v2

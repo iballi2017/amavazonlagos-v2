@@ -13,6 +13,30 @@
   background: #555;
 }
 
+.iti.iti--allow-dropdown {
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.iti.iti--allow-dropdown.iti--show-flags {
+  width: 100%;
+}
+.iti.iti--allow-dropdown.iti--show-flags .iti__tel-input {
+  padding-left: 50px !important;
+  width: 100%;
+}
+
+.iti .iti__country-container {
+  display: none;
+}
+
+.intl-tel-input {
+  width: 300px;
+  background-color: red;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -57,30 +81,6 @@ html {
 }
 [aria-current=page] svg {
   color: rgb(68, 98, 127);
-}
-
-.iti.iti--allow-dropdown {
-  display: block;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-.iti.iti--allow-dropdown.iti--show-flags {
-  width: 100%;
-}
-.iti.iti--allow-dropdown.iti--show-flags .iti__tel-input {
-  padding-left: 50px !important;
-  width: 100%;
-}
-
-.iti .iti__country-container {
-  display: none;
-}
-
-.intl-tel-input {
-  width: 300px;
-  background-color: red;
 }
 
 /*# sourceMappingURL=main.css.map */
