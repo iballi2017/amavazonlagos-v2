@@ -1,0 +1,21 @@
+.summary-card{
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 7px;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgb(42, 135, 172);
+        cursor: pointer;
+    }
+    
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    
+}
